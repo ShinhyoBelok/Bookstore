@@ -1,5 +1,5 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 export default function Navbar() {
   return (
@@ -26,8 +26,8 @@ export default function Navbar() {
         </ul>
       </div>
       <div>
-        <img src="" alt="user pic"/>
+        <img src="" alt="user pic" />
       </div>
     </nav>
-  )
+  );
 }

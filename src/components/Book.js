@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
+import { string } from 'prop-types';
 
 export default function Book(props) {
-  const {title, author} = props;
+  const { title, author } = props;
   return (
     <li className="book">
       <section>
@@ -12,5 +13,10 @@ export default function Book(props) {
         </div>
       </section>
     </li>
-  )
+  );
 }
+
+Book.propTypes = {
+  title: string.isRequired,
+  author: string.isRequired,
+};
