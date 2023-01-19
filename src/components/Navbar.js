@@ -1,12 +1,13 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import '../css/navbar.css';
 
 export default function Navbar() {
   return (
     <nav>
-      <div>
+      <div className="linkNavbar">
         <h1>Bookstore CMS</h1>
-        <ul>
+        <ul className="ulNavbar">
           <li className="link">
             <NavLink
               to="/"
@@ -25,7 +26,7 @@ export default function Navbar() {
           </li>
         </ul>
       </div>
-      <div>
+      <div className="userPic">
         <img src="" alt="user pic" />
       </div>
     </nav>
