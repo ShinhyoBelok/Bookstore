@@ -13,14 +13,12 @@
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -49,14 +47,6 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-[You can see our live demo](none)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -80,29 +70,21 @@ Clone this repository to your desired folder:
 - write: git clone https://github.com/ShinhyoBelok/BookStore.git
 - Open the repository with VS Code.
 
-### Usage
-
-To run the project, execute the following command:
-
-- Run npm start in the terminal
-
 ## Install
 
 In order to modificate the project you have to install the dependency:
 
 - Run npm init -y
 
-### Deployment
+### Usage
 
-You can deploy this project using:
+To run the project, execute the following command:
 
-[Deploy](none)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- Run npm start in the terminal
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
 👤 **Shinhyo**
 
@@ -140,12 +122,6 @@ Give a ⭐️ if you like this project!
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ <a name="faq"></a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
