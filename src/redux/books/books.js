@@ -1,9 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 import { createSlice } from '@reduxjs/toolkit';
 
-const ADD_BOOK = 'ADD_BOOK';
-const REMOVE_BOOK = 'REMOVE_BOOK';
-
 const bookSlice = createSlice({
   name: 'book',
   initialState: {books: []},
