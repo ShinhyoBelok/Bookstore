@@ -1,27 +1,17 @@
 import React from 'react';
-import { v4 as uuidv4 } from 'uuid';
+import { useSelector } from 'react-redux';
 import AddBook from '../components/AddBook';
 import Book from '../components/Book';
 
 export default function Books() {
-  const testData = [
-    {
-      title: 'The Hunger Games',
-      author: 'Suzanne Collins',
-    },
-
-    {
-      title: 'Dune',
-      author: 'Frank Herbert',
-    },
-  ];
+  const books = useSelector((state) => state.booksStore.books);
   return (
     <main>
       <ul className="booksList">
         {
-          testData.map((book) => (
+          books.map((book) => (
             <Book
-              key={uuidv4}
+              key={book.key}
               title={book.title}
               author={book.author}
             />
