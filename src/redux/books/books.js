@@ -13,17 +13,15 @@ const bookSlice = createSlice({
   reducers: {
     addBook: (state, action) => {
       const newBook = {
+        key: uuidv4(),
         title: action.payload.title,
         author: action.payload.author,
       };
-      return [...state, newBook];
+      return { books: [...state.books, newBook] };
     },
     removeBook: (state, action) => {
       const index = state.map((book) => book.key).indexOf(action.payload.key);
-      return [
-        ...state.slice(0, index),
-        ...state.slice(index + 1),
-      ];
+      return { books: [...state.books.slice(0, index), ...state.books.slice(index + 1)] };
     },
   },
 });
