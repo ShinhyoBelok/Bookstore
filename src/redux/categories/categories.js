@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const CHECK_STATUS = 'CHECK_STATUS';
+export const CHECK_STATUS = 'CHECK_STATUS';
 
 const categoriesSlice = createSlice({
   name: 'categories',
@@ -9,7 +9,7 @@ const categoriesSlice = createSlice({
     checkStatus: (state, action) => {
       switch (action.payload.type) {
         case CHECK_STATUS:
-          return 'Under construction';
+          return { categories: 'Under construction' };
 
         default:
           return state;
