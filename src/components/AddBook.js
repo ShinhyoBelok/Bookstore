@@ -7,13 +7,15 @@ export default function AddBook() {
   const dispatch = useDispatch();
   const submit = (event) => {
     event.preventDefault();
-    const title = event.target.querySelector('#inTitle').value;
-    const author = event.target.querySelector('#inAuthor').value;
+    const title = event.target.querySelector('#inTitle');
+    const author = event.target.querySelector('#inAuthor');
     dispatch(addBook({
       key: uuidv4(),
-      title,
-      author,
+      title: title.value,
+      author: author.value,
     }));
+    title.value = '';
+    author.value = '';
   };
   return (
     <section>
