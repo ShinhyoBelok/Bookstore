@@ -10,9 +10,10 @@ export default function AddBook() {
     const title = event.target.querySelector('#inTitle');
     const author = event.target.querySelector('#inAuthor');
     dispatch(addBook({
-      key: uuidv4(),
+      item_id: uuidv4(),
       title: title.value,
       author: author.value,
+      category: 'unknow',
     }));
     title.value = '';
     author.value = '';
