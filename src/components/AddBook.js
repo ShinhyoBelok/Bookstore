@@ -2,6 +2,7 @@ import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/books/books';
+import '../css/addBook.css';
 
 export default function AddBook() {
   const dispatch = useDispatch();
@@ -10,15 +11,20 @@ export default function AddBook() {
     const title = event.target.querySelector('#inTitle');
     const author = event.target.querySelector('#inAuthor');
     const category = event.target.querySelector('#category');
-    dispatch(addBook({
-      item_id: uuidv4(),
-      title: title.value,
-      author: author.value,
-      category: category.value,
-    }));
-    title.value = '';
-    author.value = '';
-    category.value = 'select category';
+    if (title.value === '' || author.value === '' || category.value === '' || category.value === 'Select category') {
+      // eslint-disable-next-line
+      alert('Fill mising field in the form');
+    } else {
+      dispatch(addBook({
+        item_id: uuidv4(),
+        title: title.value,
+        author: author.value,
+        category: category.value,
+      }));
+      title.value = '';
+      author.value = '';
+      category.value = 'select category';
+    }
   };
   return (
     <section>
