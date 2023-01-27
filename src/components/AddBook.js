@@ -27,12 +27,12 @@ export default function AddBook() {
     }
   };
   return (
-    <section>
+    <section className="formSection RobotoFont">
       <h2>ADD NEW BOOK</h2>
-      <form onSubmit={submit}>
-        <input id="inTitle" type="text" placeholder="Book title" />
-        <input id="inAuthor" type="text" placeholder="Author" />
-        <select id="category" defaultValue="Select category">
+      <form className="flex" onSubmit={submit}>
+        <input id="inTitle" type="text" placeholder="Book title" className="inputField" />
+        <input id="inAuthor" type="text" placeholder="Author" className="inputField" />
+        <select id="category" defaultValue="Select category" className="inputField">
           <option value="Select category" selected disabled>Select category</option>
           <option value="Adventure">Adventure</option>
           <option value="Horror">Horror</option>
@@ -42,7 +42,7 @@ export default function AddBook() {
           <option value="Comedy">Comedy</option>
           <option value="Romance">Romance</option>
         </select>
-        <button type="submit">ADD BOOK</button>
+        <button className="RobotoFont inputField" type="submit">ADD BOOK</button>
       </form>
     </section>
   );
