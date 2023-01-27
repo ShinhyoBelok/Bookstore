@@ -6,15 +6,18 @@ $border-gray: #e8e8e8;
 
 .formSection {
   padding-bottom: 6rem;
+
   h2 {
     border-top: 2px solid $border-gray;
     padding-top: 1rem;
     margin-bottom: 1rem;
     color: $light-text-categories;
   }
+
   form {
     align-items: center;
     gap: 1.5rem;
+
     button {
       border: none;
       background-color: $theme-blue;
