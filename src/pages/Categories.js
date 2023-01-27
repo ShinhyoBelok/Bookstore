@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { checkStatus, CHECK_STATUS } from '../redux/categories/categories';
+import '../css/category.css';
 
 export default function Categories() {
   const categories = useSelector((state) => state.categoriesStore.categories);
@@ -13,9 +14,9 @@ export default function Categories() {
     );
   };
   return (
-    <div>
+    <section className="categorySection flex">
       <h2>{categories}</h2>
       <button type="submit" onClick={clickHandler}>Check status</button>
-    </div>
+    </section>
   );
 }

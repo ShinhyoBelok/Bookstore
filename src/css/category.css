@@ -1,0 +1,14 @@
+.categorySection {
+  flex-direction: column;
+  padding: 1rem;
+}
+.categorySection button {
+  border: none;
+  border-radius: 5px;
+  background-color: #0290ff;
+  color: white;
+  padding: 12px 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
