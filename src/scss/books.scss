@@ -4,5 +4,7 @@ main {
   ul {
     padding: 25px 0;
     list-style: none;
+    flex-direction: column;
+    gap: 1.5rem;
   }
 }

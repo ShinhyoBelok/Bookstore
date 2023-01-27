@@ -10,7 +10,7 @@ export default function Books() {
 
   return (
     <main>
-      <ul className="booksList">
+      <ul className="booksList flex">
         {
           books.map((book) => (
             <Book
