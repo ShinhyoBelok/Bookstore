@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+
+$light-text: #c8c8c8;
+$light-text-categories: #8f8f8f;
+$theme-blue: #0290ff;
+$theme-blue-dark: #678fc7;
+$border-gray: #e8e8e8;
+
+button {
+  cursor: pointer;
+}
+
+.book {
+  padding: 30px;
+  border: 1px solid $border-gray;
+  border-radius: 10px;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.bookProgress {
+  font-family: 'Slabo 27px', serif;
+  font-size: 1.1rem;
+
+  button {
+    font-family: 'Slabo 27px', serif;
+    font-size: 1rem;
+    padding: 7.5px 25px;
+    color: white;
+    background-color: $theme-blue;
+    border: none;
+    border-radius: 5px;
+  }
+}
+
+.progress {
+  align-items: center;
+  gap: 15px;
+  padding-right: 40px;
+  border-right: 2px solid $border-gray;
+
+  .progressCircle {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    display: block;
+    background-color: transparent;
+    border-top: 5px solid rgb(66, 139, 202);
+    border-right: 5px solid rgb(66, 139, 202);
+    border-bottom: 5px solid rgb(66, 139, 202);
+    border-left: 5px solid rgba(66, 139, 202, 0.2);
+    transform: rotate(45deg);
+  }
+}
+
+.progressStatus {
+  color: $light-text;
+}
+
+.progressText {
+  .text {
+    font-size: 2.2rem;
+  }
+}
+
+.currentChapter {
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+  gap: 12px;
+  margin-left: 40px;
+
+  .currentChapterTitle {
+    color: $light-text;
+  }
+}
+
+.RobotoFont {
+  font-family: 'Roboto', sans-serif;
+}
+
+.bookInfo {
+  font-family: 'Slabo 27px', serif;
+
+  button {
+    font-family: 'Slabo 27px', serif;
+    font-size: 1rem;
+    border: none;
+    background-color: white;
+    color: $theme-blue-dark;
+  }
+
+  .btnBook {
+    gap: 1rem;
+  }
+
+  .btnDiv {
+    height: 1.3rem;
+    width: 2px;
+    background-color: $light-text;
+  }
+
+  h5 {
+    color: $light-text-categories;
+    font-weight: unset;
+    margin-bottom: 0.3rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  h4 {
+    font-weight: unset;
+    color: $theme-blue-dark;
+    margin-bottom: 1rem;
+  }
+}

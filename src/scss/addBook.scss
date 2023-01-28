@@ -1,0 +1,36 @@
+$light-text: #c8c8c8;
+$light-text-categories: #8f8f8f;
+$theme-blue: #0290ff;
+$theme-blue-dark: #678fc7;
+$border-gray: #e8e8e8;
+
+.formSection {
+  padding-bottom: 6rem;
+
+  h2 {
+    border-top: 2px solid $border-gray;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    color: $light-text-categories;
+  }
+
+  form {
+    align-items: center;
+    gap: 1.5rem;
+
+    button {
+      border: none;
+      background-color: $theme-blue;
+      color: white;
+      padding: 12px 30px;
+    }
+  }
+}
+
+.inputField {
+  color: #757575;
+  border: 1px solid $border-gray;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 12px;
+}

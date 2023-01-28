@@ -1,0 +1,27 @@
+.formSection {
+  padding-bottom: 6rem;
+}
+.formSection h2 {
+  border-top: 2px solid #e8e8e8;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  color: #8f8f8f;
+}
+.formSection form {
+  align-items: center;
+  gap: 1.5rem;
+}
+.formSection form button {
+  border: none;
+  background-color: #0290ff;
+  color: white;
+  padding: 12px 30px;
+}
+
+.inputField {
+  color: #757575;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 12px;
+}

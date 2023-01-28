@@ -1,0 +1,15 @@
+$theme-blue: #0290ff;
+
+.categorySection {
+  flex-direction: column;
+  padding: 1rem;
+
+  button {
+    border: none;
+    border-radius: 5px;
+    background-color: $theme-blue;
+    color: white;
+    padding: 12px 30px;
+    width: fit-content;
+  }
+}

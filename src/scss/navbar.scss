@@ -1,3 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Roboto:wght@500&display=swap');
+
 nav {
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
+  color: #0290ff;
+  background-color: white;
+  padding: 25px;
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+.ulNavbar {
   display: flex;
+  gap: 24px;
+  align-items: center;
+  list-style: none;
+  font-family: 'Abel', sans-serif;
+  padding-left: 80px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.userPic {
+  img {
+    width: 38px;
+  }
 }

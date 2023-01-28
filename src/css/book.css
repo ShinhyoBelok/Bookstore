@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap");
+button {
+  cursor: pointer;
+}
+
+.book {
+  padding: 30px;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.bookProgress {
+  font-family: "Slabo 27px", serif;
+  font-size: 1.1rem;
+}
+.bookProgress button {
+  font-family: "Slabo 27px", serif;
+  font-size: 1rem;
+  padding: 7.5px 25px;
+  color: white;
+  background-color: #0290ff;
+  border: none;
+  border-radius: 5px;
+}
+
+.progress {
+  align-items: center;
+  gap: 15px;
+  padding-right: 40px;
+  border-right: 2px solid #e8e8e8;
+}
+.progress .progressCircle {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  display: block;
+  background-color: transparent;
+  border-top: 5px solid rgb(66, 139, 202);
+  border-right: 5px solid rgb(66, 139, 202);
+  border-bottom: 5px solid rgb(66, 139, 202);
+  border-left: 5px solid rgba(66, 139, 202, 0.2);
+  transform: rotate(45deg);
+}
+
+.progressStatus {
+  color: #c8c8c8;
+}
+
+.progressText .text {
+  font-size: 2.2rem;
+}
+
+.currentChapter {
+  flex-direction: column;
+  justify-content: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 12px;
+  margin-left: 40px;
+}
+.currentChapter .currentChapterTitle {
+  color: #c8c8c8;
+}
+
+.RobotoFont {
+  font-family: "Roboto", sans-serif;
+}
+
+.bookInfo {
+  font-family: "Slabo 27px", serif;
+}
+.bookInfo button {
+  font-family: "Slabo 27px", serif;
+  font-size: 1rem;
+  border: none;
+  background-color: white;
+  color: #678fc7;
+}
+.bookInfo .btnBook {
+  gap: 1rem;
+}
+.bookInfo .btnDiv {
+  height: 1.3rem;
+  width: 2px;
+  background-color: #c8c8c8;
+}
+.bookInfo h5 {
+  color: #8f8f8f;
+  font-weight: unset;
+  margin-bottom: 0.3rem;
+}
+.bookInfo h3 {
+  font-size: 1.8rem;
+}
+.bookInfo h4 {
+  font-weight: unset;
+  color: #678fc7;
+  margin-bottom: 1rem;
+}

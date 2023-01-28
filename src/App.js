@@ -5,6 +5,7 @@ import Books from './pages/Books';
 import Categories from './pages/Categories';
 import Navbar from './components/Navbar';
 import { getBooks } from './redux/books/books';
+import './css/baseStyle.css';
 
 export default function App() {
   const dispatch = useDispatch();

@@ -3,12 +3,14 @@ import { useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import AddBook from '../components/AddBook';
 import Book from '../components/Book';
+import '../css/books.css';
 
 export default function Books() {
   const books = useSelector((state) => state.booksStore.books);
+
   return (
     <main>
-      <ul className="booksList">
+      <ul className="booksList flex">
         {
           books.map((book) => (
             <Book
@@ -16,6 +18,7 @@ export default function Books() {
               id={book.id}
               title={book.title}
               author={book.author}
+              category={book.category}
             />
           ))
         }

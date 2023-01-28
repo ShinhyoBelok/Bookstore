@@ -4,22 +4,24 @@ import '../css/navbar.css';
 
 export default function Navbar() {
   return (
-    <nav>
-      <div className="linkNavbar">
+    <nav className="flex">
+      <div className="linkNavbar flex">
         <h1>Bookstore CMS</h1>
         <ul className="ulNavbar">
-          <li className="link">
+          <li>
             <NavLink
+              className="link"
               to="/"
-              style={({ isActive }) => (isActive ? { color: 'red' } : {})}
+              style={({ isActive }) => (isActive ? { color: 'black' } : { color: '#a4a4a4' })}
             >
               BOOKS
             </NavLink>
           </li>
-          <li className="link">
+          <li>
             <NavLink
+              className="link"
               to="/categories"
-              style={({ isActive }) => (isActive ? { color: 'red' } : {})}
+              style={({ isActive }) => (isActive ? { color: 'black' } : { color: '#a4a4a4' })}
             >
               CATEGORIES
             </NavLink>
@@ -27,7 +29,7 @@ export default function Navbar() {
         </ul>
       </div>
       <div className="userPic">
-        <img src="" alt="user pic" />
+        <img src="https://img.icons8.com/color/512/test-account.png" alt="user pic" />
       </div>
     </nav>
   );
